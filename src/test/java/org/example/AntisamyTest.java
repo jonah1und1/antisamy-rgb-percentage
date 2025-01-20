@@ -19,8 +19,6 @@ class AntisamyTest {
         String taintedHtml = "<html><body><style>.cl { color: rgb(0%,0%,0%); }</style></body></html>";
         Policy policy = Policy.getInstance();
 
-        System.out.println(policy);
-
         //When
         CleanResults results = antiSamy.scan(taintedHtml, policy);
 
